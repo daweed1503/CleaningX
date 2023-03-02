@@ -257,6 +257,7 @@ const watchFiles = () => {
     server: {
       baseDir: `${buildFolder}`
     },
+    notify: false,
   });
 
   watch(paths.srcScss, styles);
