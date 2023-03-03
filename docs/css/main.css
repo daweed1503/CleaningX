@@ -9,6 +9,7 @@
   --dark-color: #211f54;
   --accent-color: #0075ff;
   --hover-color: #1d53bb;
+  --border-color: #DCDDEB;
 }
 
 /* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
@@ -331,7 +332,7 @@ a {
 
 .works__inner {
   padding: 240px 0;
-  border-bottom: 1px solid #DCDDEB;
+  border-bottom: 1px solid var(--border-color);
 }
 .works__title {
   text-align: center;
@@ -390,5 +391,100 @@ a {
 .works__explore:hover {
   background-color: var(--accent-color);
   color: var(--light-color);
+}
+
+.services__inner {
+  padding: 240px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.services__title {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 13px;
+  max-width: 608px;
+}
+.services__text {
+  text-align: center;
+  max-width: 702px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 96px;
+  margin-bottom: 40px;
+}
+.services__item {
+  padding-left: 87px;
+  position: relative;
+}
+.services__item::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/clients.svg);
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  left: 0;
+  top: -10px;
+}
+.services__item--jobs::before {
+  background-image: url(../../img/jobs.svg);
+}
+.services__item--empoloyees::before {
+  background-image: url(../../img/empoloyees.svg);
+}
+.services__item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 1.6px;
+}
+.services__item-num {
+  display: block;
+  font-family: var(--font-bold, sans-serif);
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+}
+.services__video {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(../../img/services-video.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 53px;
+  max-width: 1012px;
+  height: 570px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.services__link img {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.services__link img:hover {
+  -webkit-transform: scale3d(0.94, 0.94, 1.01);
+  transform: scale3d(0.94, 0.94, 1.01);
 }
 /*# sourceMappingURL=main.css.map */
