@@ -1,5 +1,6 @@
 :root {
   --font-family: "RobotoRegular", sans-serif;
+  --font-bold: "RobotoBold", sans-serif;
   --content-width: 1268px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -150,7 +151,7 @@ a {
 }
 
 .header__inner {
-  padding: 38px 0;
+  padding: 32px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,5 +225,99 @@ a {
   background-color: var(--hover-color);
   -webkit-transform: translate3d(0px, -3px, 0.01px);
   transform: translate3d(0px, -3px, 0.01px);
+}
+
+.hero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.hero__content {
+  max-width: 567px;
+}
+.hero .hero__title {
+  font-size: 68px;
+  line-height: 74px;
+  margin-bottom: 22px;
+}
+.hero .hero__text {
+  margin-bottom: 34px;
+}
+.hero .hero__btn {
+  padding: 26px 38px;
+  font-family: var(--font-bold, sans-serif);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+.hero__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.hero__phone {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: var(--font-bold, sans-serif);
+  color: var(--dark-color);
+  position: relative;
+  padding-left: 88px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.hero__phone::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/phone.svg);
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  left: 0;
+  top: -7px;
+}
+.hero__phone:hover {
+  opacity: 0.76;
+  -webkit-transform: translate3d(0px, -3px, 0.01px);
+  transform: translate3d(0px, -3px, 0.01px);
+}
+.hero .hero__phone-text {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  font-family: var(--font-family, sans-serif);
+}
+.hero__image {
+  -webkit-transform: translateX(110px);
+  -ms-transform: translateX(110px);
+  transform: translateX(110px);
+}
+
+.title {
+  font-family: var(--font-bold, sans-serif);
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  margin: 0;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--text-color);
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
